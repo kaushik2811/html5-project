@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HTML-Final Project</title>
+        <style>
+            ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active1 {
+  background-color: #1b18e8;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.container {
+    width: 80%;
+    margin: 30px auto;
+    overflow: hidden;
+    display: flex;
+  justify-content: center;   
+}
+ 
+.galleryItem img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+div.galleryItem {
+    color: #797478;
+    font: 10px/1.5 Verdana, Helvetica, sans-serif;
+    float: left;    
+    width: 14%;
+    margin:  2% 2% 50px 2%; 
+}
+div.container-text {
+  text-align: center;
+  padding: 10px 20px;
+  background-color:antiquewhite
+}
+#travel{
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 18px;
+
+}
+hr { 
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  color:aquamarine;
+} 
+
+
+</style>
+    </head>
+    <body style="background-color:#111;margin-top:0px;">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li style="float:right"><a class="active1" href="about.html">About</a></li>
+        </ul>
+    
+        <div class="slideshow-container" >
+        
+                <div class="mySlides fade">
+                        <img src="https://lonelyplanetwp.imgix.net/2017/01/GettyImages-477846647_1-b9431a6832ce.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" style="width:100%; border-radius: 5px;">
+                        <div class="text">Copenhagen,Denmark</div>
+                        </div>
+                        
+                <div class="mySlides fade">
+                        <img src="https://lonelyplanetstatic.imgix.net/marketing/2019/BIT/cities/Shenzhen2.jpg?q=40&sharp=10&w=1330&vib=20" style="width:100%; border-radius: 5px;">
+                        <div class="text">Shēnzhèn, China</div>
+                        </div>
+                        
+                <div class="mySlides fade">
+                        <img src="https://lonelyplanetstatic.imgix.net/marketing/2019/BIT/cities/NoviSad.jpg?q=40&sharp=10&w=1330" style="width:100%; border-radius: 5px;">
+                        <div class="text">Novi Sad, Serbia</div>
+                        </div>
+                
+                <div class="mySlides fade">
+                        <img src="https://lonelyplanetstatic.imgix.net/marketing/2019/BIT/cities/Miami.jpg?q=40&sharp=10&w=1330" style="width:100%; border-radius: 5px;">
+                        <div class="text">Miami, USA</div>
+                        </div>
+    
+                <div class="mySlides fade">
+                            <img src="https://lonelyplanetstatic.imgix.net/marketing/2019/BIT/cities/Kathmandu.jpg?q=40&sharp=10&w=1330" style="width:100%; border-radius: 5px;">
+                            <div class="text">Kathmandu, Nepal</div>
+                            </div>
+                
+                <div class="mySlides fade">
+                            <img src="https://lonelyplanetstatic.imgix.net/marketing/2019/BIT/cities/MexicoCity.jpg?q=40&sharp=10&w=1330" style="width:100%; border-radius: 5px;">
+                            <div class="text">Mexico City, Mexico</div>
+                            </div>
+                
+                <div class="mySlides fade">
+                            <img src="https://lonelyplanetstatic.imgix.net/marketing/2019/BIT/cities/Dakar.jpg?q=40&sharp=10&w=1330" style="width:100%; border-radius: 5px;">
+                            <div class="text">Dakar, Senegal</div>
+                            </div>
+                
+                <div class="mySlides fade">
+                            <img src="https://lonelyplanetstatic.imgix.net/marketing/2019/BIT/cities/Seattle.jpg?q=40&sharp=10&w=1330" style="width:100%; border-radius: 5px;">
+                            <div class="text">Seattle, USA</div>
+                            </div>
+                
+                <div class="mySlides fade">
+                            <img src="https://lonelyplanetstatic.imgix.net/marketing/2019/BIT/cities/Zadar.jpg?q=40&sharp=10&w=1330" style="width:100%; border-radius: 5px;">
+                            <div class="text">Zadar, Croatia</div>
+                            </div>     
+                
+                <div class="mySlides fade">
+                            <img src="https://lonelyplanetstatic.imgix.net/marketing/2019/BIT/cities/Meknes.jpg?q=40&sharp=10&w=1330" style="width:100%; border-radius: 5px;">
+                            <div class="text">Meknès, Morocco</div>
+                            </div>     
+            </div>
+            <hr>    
+            <div id="travel">
+                <h1>TRAVEL DAIRY</h1>
+            </div>
+            <div class="container">
+                    <div class="galleryItem">
+                        <a href="copenhagen.html"><img src="https://lonelyplanetwp.imgix.net/2017/01/GettyImages-477846647_1-b9431a6832ce.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" alt="Copenhagen,Denmark"></a>
+                        <div class="container-text">
+                        <p>Copenhagen,Denmark</p>
+                        </div>
+                </div>
+                    <div class="galleryItem">
+                        <a href="shenzhen.html"><img src="https://lonelyplanetstatic.imgix.net/marketing/2019/BIT/cities/Shenzhen2.jpg?q=40&sharp=10&w=1330&vib=20" alt="Shēnzhèn, China"></a>
+                        <div class="container-text">
+                                <p>Shēnzhèn, China</p>
+                                </div>
+                    </div>
+                      <div class="galleryItem">
+                        <a href="NoviSad.html"><img src="https://lonelyplanetstatic.imgix.net/marketing/2019/BIT/cities/NoviSad.jpg?q=40&sharp=10&w=1330" alt="Novi Sad, Serbia"></a>
+                        <div class="container-text">
+                        <p>Novi Sad, Serbia</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="container">
+                    <div class="galleryItem">
+                        <a href="Miami.html"><img src="https://lonelyplanetstatic.imgix.net/marketing/2019/BIT/cities/Miami.jpg?q=40&sharp=10&w=1330" alt="Miami, USA"></a>
+                        <div class="container-text">
+                                <p>Miami, USA</p>
+                                </div>
+                    </div>
+                      <div class="galleryItem">
+                        <a href="Kathmandu.html"><img src="https://lonelyplanetstatic.imgix.net/marketing/2019/BIT/cities/Kathmandu.jpg?q=40&sharp=10&w=1330" alt="Kathmandu, Nepal"></a>
+                        <div class="container-text">
+                                <p>Kathmandu, Nepal</p>
+                                </div>
+                    </div>
+                </div>   
+                <div class="container">   
+                    <div class="galleryItem">
+                        <a href="Mexico.html"><img src="https://lonelyplanetstatic.imgix.net/marketing/2019/BIT/cities/MexicoCity.jpg?q=40&sharp=10&w=1330" alt="Mexico City, Mexico"></a>
+                        <div class="container-text">
+                                <p>Mexico City, Mexico</p>
+                                </div>
+                    </div>
+                      <div class="galleryItem">
+                        <a href="Dakar.html"><img src="https://lonelyplanetstatic.imgix.net/marketing/2019/BIT/cities/Dakar.jpg?q=40&sharp=10&w=1330" alt="Dakar, Senegal"></a>
+                        <div class="container-text">
+                                <p>Dakar, Senegal</p>
+                                </div>
+                    </div>
+                
+                    <div class="galleryItem">
+                        <a href="Seattle.html"><img src="https://lonelyplanetstatic.imgix.net/marketing/2019/BIT/cities/Seattle.jpg?q=40&sharp=10&w=1330" alt="Seattle, USA"></a>
+                        <div class="container-text">
+                                <p>Seattle, USA</p>
+                                </div>
+                    </div>
+                </div>
+            <div class="container">  
+                      <div class="galleryItem">
+                        <a href="Zadar.html"><img src="https://lonelyplanetstatic.imgix.net/marketing/2019/BIT/cities/Zadar.jpg?q=40&sharp=10&w=1330" alt="Zadar, Croatia"></a>
+                        <div class="container-text">
+                                <p>Zadar, Croatia</p>
+                                </div>
+                    </div>
+                 
+                    <div class="galleryItem">
+                        <a href="Meknes.html"><img src="https://lonelyplanetstatic.imgix.net/marketing/2019/BIT/cities/Meknes.jpg?q=40&sharp=10&w=1330" alt="Meknès, Morocco"></a>
+                        <div class="container-text">
+                                <p>Meknès, Morocco</p>
+                                </div>
+                    </div>
+              </div>
+            <script>
+                    var myIndex = 0;
+                    show();
+                    
+                    function show() {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                      }
+                      myIndex++;
+                      if (myIndex > x.length) {myIndex = 1}    
+                      x[myIndex-1].style.display = "block";  
+                      setTimeout(show, 4000); // Change image every 4 seconds
+                    }
+                    </script>  
+        </body> 
+</html>   

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Html Form</title>
+        <meta charset="UTF-8">
+        <style>
+            ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active1 {
+  background-color: #1b18e8;
+}
+            #form-style{
+                border-color:#ccc;
+                border:1px solid white;
+                margin-left: auto;
+                margin-right: auto;
+                text-align:center;
+                width:600px;
+                background-color:white;
+                box-shadow:1px 2px 4px rgba(0, 0, 0, .5);
+            }
+#form-heading{
+                font-size:20px;
+                padding-top:56px;
+                padding-bottom: 32px;
+                font-family: Lucida Console;;
+            }
+
+#input-field{
+                padding-top: 40px;
+                padding-bottom: 40px;
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+#input-box{
+                font-size:18px;
+                padding-bottom: 12px;
+                margin-bottom: 36px;
+                border-top: 0px;
+                border-right:0px;
+                border-left: 0px;
+                border-bottom: 1px solid #ccc;
+                width:100%;  
+            }
+#register{
+                background-color: #0056ff;
+                padding-top: 12px;
+                padding-bottom: 20px;
+                padding-left: 24px;
+                padding-right: 24px;
+                font-size: 18px;
+                color:white;
+                border: none;
+                margin-bottom:20px;
+}
+hr { 
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1.5px;
+  color:blue;
+} 
+     </style>
+    </head>
+    <body style="background-color: #111"> 
+            <ul>
+                    <li><a href="newone.html">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li style="float:right"><a class="active1" href="about.html">About</a></li>
+                </ul>
+        <form id="form-style" method="GET">
+            <h1 id=form-heading>Wanna come on my next trip? Contact Me</h1>
+            <hr>
+            <div id="input-field" >
+            <input id="input-box" type="text" name="fullname" placeholder="Full Name" autofocus/><br/>
+            <input id="input-box" type="email" name="email" placeholder="Email"/><br/>
+            <input id="input-box" type="number" name="Contact" placeholder="Contact No." /><br/>
+            </div>   
+            <div>
+                    <input id="register" type="submit" value="Contact Us" />
+            </div>
+        </form>
+    </body>
+</html>
